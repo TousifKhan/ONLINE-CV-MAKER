@@ -53,7 +53,6 @@
 			</div>
 		  
 		  <div class="box-footer">
-			<button type="submit" class="btn btn-default">Cancel</button>
 			<button type="submit" class="btn btn-info pull-right">Add References Details</button>
 		  </div>
 		  

@@ -26,12 +26,10 @@ public class UserSession {
 	private UserSession(){}
 	
 	public static UserSession getSession(HttpServletRequest request){
-		HttpSession httpSession = request.getSession();
 		if(session == null) {
 			session = new UserSession();
-			httpSession.setAttribute("user", session);
 		}
-		return (UserSession)httpSession.getAttribute("user");
+		return session;
 	}
 
 	public void clearSession(HttpServletRequest request) {
