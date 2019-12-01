@@ -54,7 +54,6 @@
 				
 				<div class="box-body">
 					Generate your <a href="${context}/generation">Online CV</a> in PDF format.
-				
 				</div>
 			  </div>
 			</section>

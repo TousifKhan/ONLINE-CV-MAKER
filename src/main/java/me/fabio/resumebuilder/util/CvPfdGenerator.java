@@ -2,12 +2,9 @@ package me.fabio.resumebuilder.util;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;
-import java.util.Optional;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.itextpdf.text.BaseColor;
 import com.itextpdf.text.Document;
 import com.itextpdf.text.DocumentException;
 import com.itextpdf.text.Element;
@@ -17,23 +14,10 @@ import com.itextpdf.text.pdf.PdfWriter;
 
 import me.fabio.resumebuilder.entity.Education;
 import me.fabio.resumebuilder.entity.Personal;
-import me.fabio.resumebuilder.repository.EducationRepository;
-import me.fabio.resumebuilder.repository.ExperienceRepository;
-import me.fabio.resumebuilder.repository.ParticipationRepository;
-import me.fabio.resumebuilder.repository.PersonalRepository;
-import me.fabio.resumebuilder.repository.ProjectsRepository;
-import me.fabio.resumebuilder.repository.ReferencesRepository;
 
 @Component
 public class CvPfdGenerator {
 
-	@Autowired PersonalRepository repo;
-	@Autowired EducationRepository eduRepo;
-	@Autowired ExperienceRepository expRepo;
-	@Autowired ParticipationRepository partRepo;
-	@Autowired ProjectsRepository proRepo;
-	@Autowired ReferencesRepository refRepo;
-	
 	public ByteArrayInputStream generate(UserSession session){
 		Document document = new Document();
         ByteArrayOutputStream out = new ByteArrayOutputStream();
@@ -61,17 +45,6 @@ public class CvPfdGenerator {
             	document.add(eduPara);
             }
 
-            Paragraph p2 = new Paragraph();
-            p2.add("This is my paragraph 2"); //no alignment
-
-            document.add(p2);
-//
-//            Font f = new Font();
-//            f.setStyle(Font.BOLD);
-//            f.setSize(8);
-//
-//            document.add(new Paragraph("This is my paragraph 3", f));
-//            
             document.close();
 
         } catch (DocumentException ex) {
@@ -97,9 +70,7 @@ public class CvPfdGenerator {
 	
 	private static Paragraph getEducationalDetails(Education e) {
 		Paragraph para = null;
-		System.out.println(e);
 		if(e != null) {
-			System.out.println("not null");
 			para = new Paragraph();
 			para.add("College Name: " + valueOf(e.getCollegeName())+"\n");
 			para.add("Subject : " + valueOf(e.getSubject())+"\n");

@@ -5,7 +5,7 @@
 	<li class="treeview active">
 		<a href="#">
 			<i class="fa fa-link"></i> 
-			<span><spring:message code="menu.user-menu" /></span>
+			<span><spring:message code="menu.user-profile" /></span>
 			<i class="fa fa-angle-left pull-right"></i>
 		</a>
 		<ul class="treeview-menu">

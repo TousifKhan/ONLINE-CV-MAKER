@@ -6,7 +6,7 @@
 
   <div class="box">
 	<div class="box-header with-border">
-	  <h3 class="box-title">References Details</h3>
+	  <h3 class="box-title">&nbsp;</h3>
 	  <div class="box-tools pull-right">
 		<button class="btn btn-box-tool" data-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fa fa-minus"></i></button>
 		<button class="btn btn-box-tool" data-widget="remove" data-toggle="tooltip" title="Remove"><i class="fa fa-times"></i></button>
@@ -18,35 +18,35 @@
 		  <div class="box-body">
 		  
 			<div class="form-group">
-			  <label class="col-sm-2 control-label">Name of Reference</label>
+			  <label class="col-sm-2 control-label"><spring:message code="form.reference.name" /></label>
 			  <div class="col-sm-4">
 			  	<form:input path="name" cssClass="form-control input-sm" />
 			  </div>
 			</div>
 			
 			<div class="form-group">
-			  <label class="col-sm-2 control-label">Designation</label>
+			  <label class="col-sm-2 control-label"><spring:message code="form.reference.designation" /></label>
 			  <div class="col-sm-4">
 			  	<form:input path="designation" cssClass="form-control input-sm" />
 			  </div>
 			</div>
 			
 			<div class="form-group">
-			  <label class="col-sm-2 control-label">Affiliation</label>
+			  <label class="col-sm-2 control-label"><spring:message code="form.reference.affiliation" /></label>
 			  <div class="col-sm-4">
 			  	<form:input path="affiliation" cssClass="form-control input-sm" />
 			  </div>
 			</div>
 			
 			<div class="form-group">
-			  <label class="col-sm-2 control-label">Email</label>
+			  <label class="col-sm-2 control-label"><spring:message code="form.reference.email" /></label>
 			  <div class="col-sm-6">
 			  	<form:input path="emailId" cssClass="form-control input-sm" />
 			  </div>
 			</div>
 			
 			<div class="form-group">
-			  <label class="col-sm-2 control-label">Contact No.</label>
+			  <label class="col-sm-2 control-label"><spring:message code="form.reference.contact" /></label>
 			  <div class="col-sm-6">
 			  	<form:input path="contactNo" cssClass="form-control input-sm" />
 			  </div>
