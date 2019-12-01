@@ -3,6 +3,7 @@
 <%@ taglib prefix="spring" 	uri="http://www.springframework.org/tags" %>
 <%@ taglib prefix="form" 	uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="c" 		uri="http://java.sun.com/jsp/jstl/core" %>
+<spring:message code=""/>
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
@@ -27,8 +28,13 @@
 		.navbar {position:inherit !important;margin-bottom:0px;}
 		img.header {
 			position: absolute;
-			top: 10px; left: 0; right:0;
+			top: 150 px; left: 0; right:0;
 			margin: auto;
+			margin-bottom:10px;
+		}
+		.layout-boxed {
+			background:none !important;
+			margin-top: 160px;
 		}
 	</style>
 	<title>ONLINE VC MAKER</title>
@@ -62,6 +68,5 @@
       	</div>
 		</form:form>
 	</div>
-		
 </body>
 </html>	

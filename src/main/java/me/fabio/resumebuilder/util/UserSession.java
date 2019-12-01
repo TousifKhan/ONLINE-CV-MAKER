@@ -12,6 +12,8 @@ import me.fabio.resumebuilder.entity.References;
 
 public class UserSession {
 	
+	private static String USER = "online_vc_user";
+	
 	private Long userId;
 	
 	private Personal personal;
@@ -26,15 +28,18 @@ public class UserSession {
 	private UserSession(){}
 	
 	public static UserSession getSession(HttpServletRequest request){
+		HttpSession httpSession = request.getSession();
 		if(session == null) {
 			session = new UserSession();
+			httpSession.setAttribute(USER, session);
 		}
-		return session;
+		return (UserSession)httpSession.getAttribute(USER);
 	}
 
 	public void clearSession(HttpServletRequest request) {
 		HttpSession httpSession = request.getSession();
 		httpSession.removeAttribute("user");
+		//httpSession.invalidate();
 	}
 	
 	public Long getUserId() {

@@ -38,7 +38,7 @@
 		<div class="content-wrapper">
 			
 			<section class="content-header">
-			  <h1>Add Your Experience Details</h1> 
+			  <h1>Generate Your Online CV</h1> 
 			</section>
 			
 			<section class="content">
@@ -53,7 +53,7 @@
 				</div>
 				
 				<div class="box-body">
-					
+					Generate your <a href="${context}/generation">Online CV</a> in PDF format.
 				
 				</div>
 			  </div>
@@ -67,4 +67,5 @@
 	</div>
 
 </body>
+
 </html>

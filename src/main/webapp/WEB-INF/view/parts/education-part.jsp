@@ -1,5 +1,5 @@
 <section class="content-header">
-  <h1>Add Your Education Details</h1> 
+  <h1><spring:message code="header.education" /></h1> 
 </section>
 
 <section class="content">
@@ -65,7 +65,7 @@
 			</div>
 		  
 		  <div class="box-footer">
-			<button type="submit" class="btn btn-info pull-right">Add Educational Details</button>
+			<button type="submit" class="btn btn-info pull-right"><spring:message code="btn.education"/></button>
 		  </div>
 		  
 		</form:form>

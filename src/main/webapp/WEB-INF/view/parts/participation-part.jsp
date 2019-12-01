@@ -1,5 +1,5 @@
 <section class="content-header">
-  <h1>Add Your Participation Details</h1> 
+  <h1><spring:message code="header.participation" /></h1> 
 </section>
 
 <section class="content">
@@ -70,7 +70,7 @@
 			</div>
 			
 		  <div class="box-footer">
-			<button type="submit" class="btn btn-info pull-right">Add Participation Details</button>
+			<button type="submit" class="btn btn-info pull-right"><spring:message code="btn.participation"/></button>
 		  </div>
 		  
 		</form:form>

@@ -51,9 +51,6 @@ public class WelcomeController {
     		@ModelAttribute("user") User user,
     		HttpServletRequest request) {
         
-		System.out.println("username >> " + user.getUsername());
-		System.out.println("password >> " + user.getPassword());
-		
 		Personal p = repo.findByName(user.getUsername());
 		if(p != null) {
 			UserSession session = UserSession.getSession(request);
@@ -79,8 +76,6 @@ public class WelcomeController {
     public ModelAndView dispatch(
     		@RequestParam String action,
     		HttpServletRequest request) {
-        System.out.println("Action => " + action);
-
         return render(action, request);
     }
 	

@@ -1,5 +1,5 @@
 <section class="content-header">
-  <h1>Add Your Experience Details</h1> 
+  <h1><spring:message code="header.experiance" /></h1> 
 </section>
 
 <section class="content">
@@ -54,7 +54,7 @@
 			</div>
 		  
 		  <div class="box-footer">
-			<button type="submit" class="btn btn-info pull-right">Add Experience Details</button>
+			<button type="submit" class="btn btn-info pull-right"><spring:message code="btn.experiance"/></button>
 		  </div>
 		  
 		</form:form>
